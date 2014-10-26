@@ -5,10 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 </head>
 <body>
-<p>Enter URL of the article you want to touch-type:</p>
-<form action="#" th:action="@{/load-article}" method="post">
-    <input id="url" name="url" type="text"/>
-    <button type="submit">Touch type the article!</button>
-</form>
+<p>You selected this article: <span th:text="${url}">http://google.com/news</span></p>
+
 </body>
 </html>
